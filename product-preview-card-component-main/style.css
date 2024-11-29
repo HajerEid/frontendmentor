@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    padding: 10px;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    color: hsl(228, 12%, 48%);
+}
+main {
+    width: 50%;
+    display: flex;
+    min-height: 100vh;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+main .card {
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+}
+main .card img {
+    width: 50%;
+    object-fit: cover;
+    border-radius: 15px 0 0 15px;
+}
+main .card .product {
+    padding: 35px;
+    width: 50%;
+}
+main .card .product .type {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: smaller;
+}
+main .card .product h1 {
+    font-family: "Fraunces", serif;
+    color: hsl(212, 21%, 14%);
+    margin-bottom: 30px;
+    font-weight: bolder;
+}
+
+main .card .product .prices {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+main .card .product .prices .now {
+    font-family: "Fraunces", serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 30px;
+    margin-right: 20px;
+    font-weight: bolder;
+}
+
+main .card .product .prices .last {
+    text-decoration: line-through;
+}
+
+main .card .product button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    position: relative;
+    min-width: unset;
+    border: none;
+    border-radius: 8px;
+}
+
+main .card .product button:hover {
+    background-color: hsl(158, 45%, 20%);
+    cursor: pointer;
+}
+
+
+main .card .product button .cart-icon {
+    margin-right: 10px;
+    height: 20px;
+    width: auto;
+    display: inline-block;    border-radius: 0%;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a{
+    color: hsl(158, 45%, 20%);
+}
+
+@media (max-width: 375px) {
+    main {
+            width: 100%;
+        }
+    main .card {
+        flex-direction: column;
+        width: 400px;
+    }
+    main .card img {
+        width: 100%;
+        height: 300px;
+        border-radius: 15px 15px 0 0 ;
+    }
+    main .card .product {
+     width: 90%;
+     padding: 20px;
+    }
+    main .card .product h1{
+      margin: 10px 0;
+      font-size: 25px;
+    }
+
+    .attribution{
+        margin: 5px;
+    }
+   
+}
